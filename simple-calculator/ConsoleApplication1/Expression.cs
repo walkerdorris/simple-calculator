@@ -9,9 +9,7 @@ namespace simplecalculator
     public class Expression
     {
 
-        public int Max { get; private set; }
-        protected int Step { get; set; }
-        protected int First { get; set; }
+        
 
        
 
