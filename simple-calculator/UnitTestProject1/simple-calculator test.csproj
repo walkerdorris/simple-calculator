@@ -56,9 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication1\simple-calculator.csproj">
+    <ProjectReference Include="..\ConsoleApplication1\simpleCalculator.csproj">
       <Project>{b2788ede-b48b-4969-b1ba-5a8f4209656c}</Project>
-      <Name>simple-calculator</Name>
+      <Name>simpleCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

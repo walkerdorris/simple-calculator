@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simple-calculator", "ConsoleApplication1\simple-calculator.csproj", "{B2788EDE-B48B-4969-B1BA-5A8F4209656C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleCalculator", "ConsoleApplication1\simpleCalculator.csproj", "{B2788EDE-B48B-4969-B1BA-5A8F4209656C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simple-calculator test", "UnitTestProject1\simple-calculator test.csproj", "{0AAF459C-BADD-4BDA-9B90-4249B5626A0C}"
 EndProject

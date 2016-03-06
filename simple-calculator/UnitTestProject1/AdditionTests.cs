@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApplication1;
 
 namespace UnitTestProject1
 {
@@ -12,7 +13,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void AddingTwoPositiveNumbers()
         {
-            var add = new AdditionTests();
+            var add = new Addition();
             var sum = add.Add(5, 10);
             Assert.Equals(15, sum);
         }
@@ -20,7 +21,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void AddingNegativeAndPositveNumbers()
         {
-            var add = new AdditionTests();
+            var add = new Addition();
             var sum = add.Add(-2, 7);
             Assert.Equals(5, sum);
             
@@ -29,7 +30,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void AddingNegativeAndPositiveNumbers()
         {
-            var add = new AdditionTests();
+            var add = new Addition();
             var sum = add.Add(-3, -3);
             Assert.Equals(-6, sum);
 
@@ -38,7 +39,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void AddingZeroes()
         {
-            var add = new AdditionTests();
+            var add = new Addition();
             var sum = add.Add(0, 0);
             Assert.Equals(0, sum);
 

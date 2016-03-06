@@ -7,8 +7,8 @@
     <ProjectGuid>{B2788EDE-B48B-4969-B1BA-5A8F4209656C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>simpleCalculator</RootNamespace>
+    <AssemblyName>simpleCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
