@@ -14,7 +14,7 @@ namespace ExpressionTests
         [TestMethod]
         public void ParsingTest()
         {
-            
+
             Expression parser = new Expression();
             string input = "1 + 2";
             parser.ParseInput(input);
@@ -22,55 +22,45 @@ namespace ExpressionTests
             int term2 = parser.Term2;
             char op = parser.Op;
 
-            Assert.Equals(1, term1);
-            Assert.Equals(2, term2);
-            Assert.Equals('+', op);
+            Assert.AreEqual(1, term1);
+            Assert.AreEqual(2, term2);
+            Assert.AreEqual('+', op);
         }
 
         [TestMethod]
-        public void MyTestMethod()
+        [ExpectedException(typeof(ArgumentException))]
+        public void ParsingTestBadInputOne()
         {
             Expression parser = new Expression();
-            string input = "1 + 2";
+            string input = "$ + 1";
             parser.ParseInput(input);
-
-            Evaluate eval = new Evaluate();
-            decimal result = eval.Calculate(parser.Term1, parser.Op, parser.Term2);
-
-            Assert.AreEqual(3, result);
-        }
-
-
-
-        [TestMethod]
-        public void AddOperator()
-        {
-            Expression pickout = new Expression();
-            string input = "1 + 2";
-            char[] characters = input.ToCharArray();
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (characters[i].Equals ("+"))
-                {
-                    Assert.Equals('a', "+"); 
-                }
-            }
+            int term1 = parser.Term1;
+            int term2 = parser.Term2;
+            char op = parser.Op;
         }
 
         [TestMethod]
-        public void Seperation()
+        [ExpectedException(typeof(ArgumentException))]
+        public void ParsingTestBadInputTwo()
         {
-            var str = "3 + 2";
-            string[] expression = str.Split('+');
-            Assert.Equals(new[] { "3 ", " 2" }, expression);
+            Expression parser = new Expression();
+            string input = "1 $ 1";
+            parser.ParseInput(input);
+            int term1 = parser.Term1;
+            int term2 = parser.Term2;
+            char op = parser.Op;
         }
 
         [TestMethod]
-        public void EliminateSpaces()
+        [ExpectedException(typeof(ArgumentException))]
+        public void ParsingTestBadInputThree()
         {
-            string equation = "1 + 1";
-            equation = equation.Replace(" ", String.Empty);
-            Assert.Equals("1+1", equation);
+            Expression parser = new Expression();
+            string input = "1 + $";
+            parser.ParseInput(input);
+            int term1 = parser.Term1;
+            int term2 = parser.Term2;
+            char op = parser.Op;
         }
     }
 }
