@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace simpleCalculator
 {
-    class Program
+    public class Stack
     {
-        static void Main(string[] args)
-        {
+        Stack<int> x = new Stack<int>();
 
-        }
     }
 }

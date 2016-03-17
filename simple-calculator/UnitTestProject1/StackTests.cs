@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace UnitTestProject1
 {
-    class Program
+    class StackTests
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
